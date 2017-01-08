@@ -1,0 +1,25 @@
+{
+  "name": "angular-mini-preview",
+  "version": "0.0.1",
+  "authors": [
+    "Chunlei Wang<gwangchunlei@gmail.com>"
+  ],
+  "description": "Simple Image Preview on hover for Angular.js directive.",
+  "main": [
+    "dist/js/angular-mini-preview.min.js",
+    "dist/css/angular-mini-preview.min.css"
+  ],
+  "keywords": [
+    "angular",
+    "image",
+    "preview",
+    "hover"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/codedrinker/angular-mini-preview",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
