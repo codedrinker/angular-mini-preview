@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/bower-1.0.0-green.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg) ![](https://img.shields.io/badge/npm-1.0.0-red.svg)
+![](https://img.shields.io/badge/bower-1.0.0-green.svg) ![](https://img.shields.io/badge/npm-1.0.0-red.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 # angular-mini-preview
 Display image, link, content, etc. preview on hover for angular
@@ -38,7 +38,7 @@ var app = angular.module('app', ['angular-mini-preview']);
 ```
 
 Now just use mini-preview in any html:
-```
+```html
 <a href="https://codedrinker.github.com" mini-preview>
 ```
 
