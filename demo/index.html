@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Angular Mini Preview Example</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/demo/css/angular-mini-preview.min.css" />
+    <script src="/bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <script src="/demo/js/angular-mini-preview.min.js" charset="utf-8"></script>
+    <script charset="utf-8">
+    // Define our main app
+    var app = angular.module('app', [
+        'angular-mini-preview'
+    ]);
+    app.controller('AppCtrl', function($scope) {
+
+    });
+    angular.element(document).ready(function() {
+        angular.bootstrap(document, ['app']);
+    });
+    </script>
+</head>
+
+<body>
+    <div class="container" ng-controller="AppCtrl">
+        <a href="https://codedrinker.github.com" mini-preview="{width: 300, height: 200, scale: 0.25, prefetch: 'pageload'}">https://codedrinker.github.com</a>
+    </div>
+</body>
+
+</html>
