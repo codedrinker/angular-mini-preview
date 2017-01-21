@@ -1,37 +1,38 @@
 {
-  "name": "angular-mini-preview",
-  "description": "Simple Image Preview on hover for Angular.js directive.",
-  "version": "1.0.0",
-  "devDependencies": {
-    "grunt": "~1.0.1",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-uglify": "^0.8.1",
-    "grunt-contrib-cssmin": "^0.12.2",
-    "grunt-serve": "~0.4.0",
-    "protractor": "~0.16.1"
-  },
-  "keywords": [
-    "angular",
-    "image",
-    "mini",
-    "preview",
-    "link",
-    "directive",
-    "hover"
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "angular": ">=1.2.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codedrinker/angular-mini-preview.git"
-  },
-  "bugs": {
-    "url": "https://github.com/codedrinker/angular-mini-preview/issues"
-  },
-  "homepage": "https://codedrinker.github.com/angular-mini-preview-page"
+    "name": "angular-mini-preview",
+    "description": "Simple Image Preview on hover for Angular.js directive.",
+    "version": "1.0.0",
+    "devDependencies": {
+        "grunt": "~1.0.1",
+        "grunt-contrib-copy": "^0.8.0",
+        "grunt-contrib-uglify": "^0.8.1",
+        "grunt-contrib-cssmin": "^0.12.2",
+        "grunt-serve": "~0.4.0",
+        "protractor": "~0.16.1"
+    },
+    "keywords": [
+        "angular",
+        "image",
+        "mini",
+        "preview",
+        "link",
+        "directive",
+        "hover"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "angular": ">=1.2.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/codedrinker/angular-mini-preview.git"
+    },
+    "bugs": {
+        "url": "https://github.com/codedrinker/angular-mini-preview/issues"
+    },
+    "author": "Chunlei Wang <gwangchunlei@gmail.com>",
+    "homepage": "https://codedrinker.github.com/angular-mini-preview-page"
 }
