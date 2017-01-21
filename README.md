@@ -18,7 +18,7 @@ Then reference the minified script:
 
 ```html
 <script src="bower_components/angular-mini-preview/dist/js/angular-mini-preview.min.js"></script>
-<link rel="stylesheet" href="../bower_components/angular-mini-preview/dist/css/angular-mini-preview.min.css">
+<link rel="stylesheet" href="bower_components/angular-mini-preview/dist/css/angular-mini-preview.min.css">
 ```
 
 Specify the angular mini preview as a dependency of your application:
