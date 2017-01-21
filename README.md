@@ -1,5 +1,39 @@
+![](https://img.shields.io/badge/bower-1.0.0-green.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
+
 # angular-mini-preview
 Display image, link, content, etc. preview on hover for angular
+
+# Demo
+![Angular Mini Preview Demo](https://codedrinker.github.io/repository/asserts/angular-mini-preview.gif)
+
+## Usage
+
+Install with Bower:
+
+```bash
+bower install angular-mini-preview
+```
+
+Then reference the minified script:
+
+```html
+<script src="bower_components/angular-mini-preview/dist/js/angular-mini-preview.min.js"></script>
+<link rel="stylesheet" href="../bower_components/angular-mini-preview/dist/css/angular-mini-preview.min.css">
+```
+
+Specify the angular mini preview as a dependency of your application:
+
+```js
+var app = angular.module('app', ['angular-mini-preview']);
+```
+
+Now just use mini-preview in any html:
+```
+<a href="https://codedrinker.github.com" mini-preview>
+```
+
+# Road Map
+1.0.0 Preview Link
 
 # MIT License
 
