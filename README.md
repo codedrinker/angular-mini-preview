@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/bower-1.0.0-green.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
+![](https://img.shields.io/badge/bower-1.0.0-green.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg) ![](https://img.shields.io/badge/npm-1.0.0-red.svg)
 
 # angular-mini-preview
 Display image, link, content, etc. preview on hover for angular
@@ -8,10 +8,14 @@ Display image, link, content, etc. preview on hover for angular
 
 ## Usage
 
-Install with Bower:
+Install with Bower(Or NPM):
 
 ```bash
 bower install angular-mini-preview
+
+OR
+
+npm install angular-mini-preview
 ```
 
 Then reference the minified script:
@@ -19,6 +23,12 @@ Then reference the minified script:
 ```html
 <script src="bower_components/angular-mini-preview/dist/js/angular-mini-preview.min.js"></script>
 <link rel="stylesheet" href="bower_components/angular-mini-preview/dist/css/angular-mini-preview.min.css">
+
+OR
+
+<script src="node_modules/angular-mini-preview/dist/js/angular-mini-preview.min.js"></script>
+<link rel="stylesheet" href="node_modules/angular-mini-preview/dist/css/angular-mini-preview.min.css">
+
 ```
 
 Specify the angular mini preview as a dependency of your application:
