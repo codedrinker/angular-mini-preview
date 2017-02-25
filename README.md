@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/bower-1.0.0-green.svg) ![](https://img.shields.io/badge/npm-1.0.1-red.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 # angular-mini-preview
-Display image, link, content, etc. preview on hover for angular
+An AngularJS directive, you can preview image, link when hover on the element.
 
 # Demo
 ![Angular Mini Preview Demo](https://codedrinker.github.io/repository/asserts/angular-mini-preview.gif)
