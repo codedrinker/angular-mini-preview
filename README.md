@@ -46,7 +46,7 @@ Now just use mini-preview in any html:
 ###### 1.0.0 Preview Link.
 ###### 1.0.1 Refactor project dependencies.
 ###### 1.0.2 Support Angular expression in A tag href.
-###### 1.0.3 Support customize link address. (eg. mini-preview="link").
+###### 1.0.3 Support customize link address. (eg. mini-preview="https://codedrinker.github.com").
 
 # MIT License
 
