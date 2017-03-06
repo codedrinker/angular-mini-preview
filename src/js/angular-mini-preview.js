@@ -62,7 +62,7 @@ AngularMiniPreview.prototype = {
     preview: function() {
         var frame = this.element.find('iframe');
         if (!!frame) {
-            frame.attr('src', this.attrs.href);
+            frame.attr('src', this.attrs.miniPreview || this.attrs.href);
         }
     }
 };
