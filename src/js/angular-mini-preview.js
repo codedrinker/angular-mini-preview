@@ -3,6 +3,7 @@ var prefix = 'ng-mini-preview';
 
 var AngularMiniPreview = function(element, attrs) {
     this.element = element;
+    this.attrs = attrs;
     this.element.addClass(prefix + '-anchor');
     this.generate();
 };
@@ -61,7 +62,7 @@ AngularMiniPreview.prototype = {
     preview: function() {
         var frame = this.element.find('iframe');
         if (!!frame) {
-            frame.attr('src', this.element.attr('href'));
+            frame.attr('src', this.attrs.href);
         }
     }
 };
