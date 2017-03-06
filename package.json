@@ -1,7 +1,7 @@
 {
     "name": "angular-mini-preview",
     "description": "Simple Image Preview on hover for Angular.js directive.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "devDependencies": {
         "grunt": "~1.0.1",
         "grunt-contrib-copy": "^0.8.0",
