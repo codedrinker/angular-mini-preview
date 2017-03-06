@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/bower-1.0.2-green.svg) ![](https://img.shields.io/badge/npm-1.0.2-red.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
+![](https://img.shields.io/badge/bower-1.0.3-green.svg) ![](https://img.shields.io/badge/npm-1.0.3-red.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 # angular-mini-preview
 An AngularJS directive, you can preview image, link when hover on the element.
@@ -43,7 +43,10 @@ Now just use mini-preview in any html:
 ```
 
 # Road Map
-1.0.0 Preview Link
+1.0.0 Preview Link.
+1.0.1 Refactor project dependencies.
+1.0.2 Support Angular expression in A tag href.
+1.0.3 Support customize link address. (eg. mini-preview="link").
 
 # MIT License
 
