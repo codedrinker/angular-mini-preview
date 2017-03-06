@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/bower-1.0.1-green.svg) ![](https://img.shields.io/badge/npm-1.0.1-red.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
+![](https://img.shields.io/badge/bower-1.0.2-green.svg) ![](https://img.shields.io/badge/npm-1.0.2-red.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 # angular-mini-preview
 An AngularJS directive, you can preview image, link when hover on the element.
