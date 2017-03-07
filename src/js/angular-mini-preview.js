@@ -50,17 +50,22 @@ AngularMiniPreview.prototype = {
         this.element.append(wrapper);
     },
     load: function() {
-        switch (this.options.load) {
-            case 'preload':
-                this.preview();
-                break;
-            default:
-                throw 'Load setting not recognized: ' + this.options.load;
-                break;
+        var that = this;
+        if (!!this.attrs.lazyLoad) {
+            this.element.bind("mouseover", function() {
+                that.preview();
+            });
+        } else {
+            this.preview();
         }
     },
     preview: function() {
         var frame = this.element.find('iframe');
+        if (!!this.attrs.lazyLoad) {
+            this.element.bind("mouseout", function(e) {
+                frame.attr('src', '');
+            });
+        }
         if (!!frame) {
             frame.attr('src', this.attrs.miniPreview || this.attrs.href);
         }
