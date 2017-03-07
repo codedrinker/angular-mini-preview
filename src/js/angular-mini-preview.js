@@ -24,8 +24,8 @@ AngularMiniPreview.prototype = {
             .element('<div>')
             .addClass(prefix + '-wrapper')
             .css({
-                width: this.options.width + 'px',
-                height: this.options.height + 'px',
+                width: this.attrs.miniWidth || (this.options.width + 'px'),
+                height: this.attrs.miniHeight || (this.options.height + 'px'),
                 top: (this.element[0].height || this.element[0].offsetHeight) / 2 + 'px',
                 left: (this.element[0].width || this.element[0].offsetWidth) / 2 + 'px'
             });
