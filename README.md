@@ -41,6 +41,12 @@ Now just use mini-preview in any html:
 ```html
 <a href="https://codedrinker.github.com" mini-preview>
 ```
+More
+```html
+<a href="https://codedrinker.github.com" mini-preview="https://codedrinker.github.com">
+<a href="https://codedrinker.github.com" mini-preview="https://codedrinker.github.com" lazy-load="true">
+<a href="https://codedrinker.github.com" mini-preview="https://codedrinker.github.com" lazy-load="true" mini-width="300px">
+```
 
 # Road Map
 ###### 1.0.0 Preview Link.
