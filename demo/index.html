@@ -2,44 +2,74 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Angular Mini Preview Example</title>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="/demo/css/angular-mini-preview.min.css" />
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="/demo/css/angular-mini-preview.min.css"/>
     <script src="/node_modules/angular/angular.min.js" charset="utf-8"></script>
     <script src="/demo/js/angular-mini-preview.min.js" charset="utf-8"></script>
     <script charset="utf-8">
-    // Define our main app
-    var app = angular.module('app', [
-        'angular-mini-preview'
-    ]);
-    app.controller('AppCtrl', function($scope) {
+        // Define our main app
+        var app = angular.module('app', [
+            'angular-mini-preview'
+        ]);
+        app.controller('AppCtrl', function ($scope) {
 
-    });
-    angular.element(document).ready(function() {
-        angular.bootstrap(document, ['app']);
-    });
+        });
+        angular.element(document).ready(function () {
+            angular.bootstrap(document, ['app']);
+        });
     </script>
+
+    <style type="text/css">
+        .table-demo {
+            width: 520px;
+            height: 300px;
+        }
+
+        .table-demo td {
+            text-align: center;
+            height: 50px;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container" ng-controller="AppCtrl">
-        <h2>Angular Mini Preview Example</h2>
-        <a href="https://codedrinker.github.com" mini-preview>https://codedrinker.github.com</a>
-        <br>
-        <br>
-        <a href="{{'https://codedrinker.github.com'}}" mini-preview>{{'angular dynamic link'}}</a>
-        <br>
-        <br>
-        <a href="{{'https://codedrinker.github.com'}}" mini-preview="http://www.baidu.com">Using address separate from href</a>
-        <br>
-        <br>
-        <a href="{{'https://codedrinker.github.com'}}" mini-preview lazy-load="true">Lazy Load</a>
-        <br>
-        <br>
-        <a href="{{'https://codedrinker.github.com'}}" mini-preview="http://www.baidu.com" lazy-load="true" mini-width="700px" mini-height="400px">Customize Height and Width</a>
-    </div>
+<div class="container" ng-controller="AppCtrl">
+    <h2>Angular Mini Preview Example</h2>
+    <table class="table-demo">
+        <tr>
+            <th>Description</th>
+            <th>Anchor</th>
+        </tr>
+        <tr>
+            <td>Basic</td>
+            <td><a href="https://codedrinker.github.com" mini-preview>Link</a></td>
+        </tr>
+        <tr>
+            <td>Angular Dynamic Link</td>
+            <td><a href="{{'https://codedrinker.github.com'}}" mini-preview>Link</a></td>
+        </tr>
+        <tr>
+            <td>Using address separate from href</td>
+            <td><a href="{{'https://codedrinker.github.com'}}" mini-preview="https://codedrinker.github.io/blog/the-smart-way-of-styling-and-customizing-file-input/">Link</a></td>
+        </tr>
+        <tr>
+            <td>Lazy load link content</td>
+            <td><a href="{{'https://codedrinker.github.com'}}" mini-preview lazy-load="true">Link</a></td>
+        </tr>
+        <tr>
+            <td>Customize Height and Width</td>
+            <td><a href="{{'https://codedrinker.github.com'}}" mini-preview="https://codedrinker.github.io/blog/the-smart-way-of-styling-and-customizing-file-input/" lazy-load="true" mini-width="700px" mini-height="400px">Link</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
 </body>
 
 </html>
