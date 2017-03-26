@@ -1,7 +1,7 @@
 var app = angular.module('angular-mini-preview', []);
 var prefix = 'ng-mini-preview';
 
-var AngularMiniPreview = function(element, attrs) {
+var AngularMiniPreview = function (element, attrs) {
     this.element = element;
     this.attrs = attrs;
     this.element.addClass(prefix + '-anchor');
@@ -15,20 +15,44 @@ AngularMiniPreview.prototype = {
         scale: .25,
         load: 'preload'
     },
-    generate: function() {
+    generate: function () {
         this.generateElements();
         this.load();
     },
-    generateElements: function() {
+    generateElements: function () {
         var wrapper = angular
             .element('<div>')
-            .addClass(prefix + '-wrapper')
-            .css({
+            .addClass(prefix + '-wrapper');
+
+        if (this.attrs.miniDirection == 'tr') {//top right
+            wrapper.css({
+                width: this.attrs.miniWidth || (this.options.width + 'px'),
+                height: this.attrs.miniHeight || (this.options.height + 'px'),
+                bottom: (this.element[0].height || this.element[0].offsetHeight) / 2 + 'px',
+                left: (this.element[0].width || this.element[0].offsetWidth) / 2 + 'px'
+            });
+        } else if (this.attrs.miniDirection == 'tl') { // top left
+            wrapper.css({
+                width: this.attrs.miniWidth || (this.options.width + 'px'),
+                height: this.attrs.miniHeight || (this.options.height + 'px'),
+                bottom: (this.element[0].height || this.element[0].offsetHeight) / 2 + 'px',
+                right: (this.element[0].width || this.element[0].offsetWidth) / 2 + 'px'
+            });
+        } else if (this.attrs.miniDirection == 'bl') { //bottom left
+            wrapper.css({
+                width: this.attrs.miniWidth || (this.options.width + 'px'),
+                height: this.attrs.miniHeight || (this.options.height + 'px'),
+                top: (this.element[0].height || this.element[0].offsetHeight) / 2 + 'px',
+                right: (this.element[0].width || this.element[0].offsetWidth) / 2 + 'px'
+            });
+        } else {//bottom right
+            wrapper.css({
                 width: this.attrs.miniWidth || (this.options.width + 'px'),
                 height: this.attrs.miniHeight || (this.options.height + 'px'),
                 top: (this.element[0].height || this.element[0].offsetHeight) / 2 + 'px',
                 left: (this.element[0].width || this.element[0].offsetWidth) / 2 + 'px'
             });
+        }
 
         var loading = angular.element('<div>').addClass(prefix + '-loading');
 
@@ -49,20 +73,20 @@ AngularMiniPreview.prototype = {
         wrapper.append(frame);
         this.element.append(wrapper);
     },
-    load: function() {
+    load: function () {
         var that = this;
         if (!!this.attrs.lazyLoad) {
-            this.element.bind("mouseover", function() {
+            this.element.bind("mouseover", function () {
                 that.preview();
             });
         } else {
             this.preview();
         }
     },
-    preview: function() {
+    preview: function () {
         var frame = this.element.find('iframe');
         if (!!this.attrs.lazyLoad) {
-            this.element.bind("mouseout", function(e) {
+            this.element.bind("mouseout", function (e) {
                 frame.attr('src', '');
             });
         }
@@ -72,10 +96,10 @@ AngularMiniPreview.prototype = {
     }
 };
 
-app.directive('miniPreview', function() {
+app.directive('miniPreview', function () {
     return {
         restrict: 'A',
-        link: function(scope, element, attrs) {
+        link: function (scope, element, attrs) {
             new AngularMiniPreview(element, attrs);
         }
     }

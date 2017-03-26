@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/bower-1.0.4-green.svg) ![](https://img.shields.io/badge/npm-1.0.4-red.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
+![](https://img.shields.io/badge/bower-1.0.5-green.svg) ![](https://img.shields.io/badge/npm-1.0.5-red.svg) ![](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 # angular-mini-preview
 An AngularJS directive, you can preview image, link when hover on the element.
@@ -54,6 +54,7 @@ More
 ###### 1.0.2 Support Angular expression in A tag href.
 ###### 1.0.3 Support customize link address. (eg. mini-preview="https://codedrinker.github.com").
 ###### 1.0.4 Support customize height and width, and 'lazy-load' attr to generate 'Preview' dialog once hover one the link area.
+###### 1.0.5 Support popup direction, use mini-direction='tr|tl|bl|br' to set the popup dialog position, the default value is 'bl'.
 
 # MIT License
 
