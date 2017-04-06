@@ -4,7 +4,7 @@
 An AngularJS directive, you can preview image, link when hover on the element.
 
 # Demo
-![Angular Mini Preview Demo](https://codedrinker.github.io/repository/asserts/angular-mini-preview.gif)
+![Angular Mini Preview Demo](https://codedrinker.github.io/repository/asserts/angular-mini-preview-1.0.7.gif)
 
 ## Usage
 
